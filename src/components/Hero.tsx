@@ -1,10 +1,13 @@
 
 import React from 'react';
 import OfferBanner from './OfferBanner';
+import { useIsMobile } from '../hooks/use-mobile';
 
 const Hero = () => {
+  const isMobile = useIsMobile();
+  
   return (
-    <div className="relative w-full h-[80vh]">
+    <div className="relative w-full h-[80vh] sm:h-[70vh] md:h-[80vh]">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 

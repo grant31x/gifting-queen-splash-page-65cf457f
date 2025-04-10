@@ -5,7 +5,7 @@ import InfoSection from '../components/InfoSection';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-royal-black">
+    <div className="min-h-screen bg-royal-black overflow-x-hidden">
       <Hero />
       <InfoSection />
     </div>

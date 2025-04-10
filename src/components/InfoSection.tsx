@@ -56,7 +56,7 @@ const InfoSection = () => {
             <p className="text-[#30A9DE] text-lg sm:text-xl font-bold">BOOK A CALL</p>
           </>}
           linkText="CLICK HERE"
-          href="#mailbox-power"
+          href="https://app.mailboxpower.com/demo/BROWNIES"
         />
         
         {/* About Me Box */}
@@ -109,7 +109,7 @@ const InfoSection = () => {
             <Instagram size={isMobile ? 36 : 48} className="text-white p-2 rounded-full bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7]" />
           </a>
           <a 
-            href="https://linkedin.com" 
+            href="https://www.linkedin.com/in/tamigrant1" 
             target="_blank" 
             rel="noopener noreferrer"
             className="transition-transform duration-300 hover:scale-110"
@@ -117,7 +117,7 @@ const InfoSection = () => {
             <Linkedin size={isMobile ? 36 : 48} className="text-white p-2 rounded-full bg-[#0077b5]" />
           </a>
           <a 
-            href="https://youtube.com" 
+            href="https://www.youtube.com/@iamtamigrant" 
             target="_blank" 
             rel="noopener noreferrer"
             className="transition-transform duration-300 hover:scale-110"

@@ -4,7 +4,7 @@ import OfferBanner from './OfferBanner';
 
 const Hero = () => {
   return (
-    <div className="relative w-full h-screen">
+    <div className="relative w-full h-[80vh]">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 

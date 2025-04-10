@@ -90,7 +90,7 @@ const InfoSection = () => {
             <p className="text-[#30A9DE] text-lg sm:text-xl font-bold">THAT...</p>
           </>}
           linkText="CLICK HERE"
-          href="#wish-more"
+          href="https://www.instagram.com/reel/DG1x1IPJ0jb/?igsh=MWp5aXc0MWoyaXA5bQ=="
         />
       </div>
 
@@ -101,7 +101,7 @@ const InfoSection = () => {
         </h2>
         <div className="flex justify-center gap-4 sm:gap-6">
           <a 
-            href="https://instagram.com" 
+            href="https://www.instagram.com/the.strategicgifting.queen?igsh=bzJndW8wdnpwd2M%3D&utm_source=qr" 
             target="_blank" 
             rel="noopener noreferrer"
             className="transition-transform duration-300 hover:scale-110"

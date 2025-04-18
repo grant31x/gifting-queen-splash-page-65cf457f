@@ -1,4 +1,3 @@
-
 import React from 'react';
 import OfferBanner from './OfferBanner';
 import { useIsMobile } from '../hooks/use-mobile';
@@ -32,7 +31,7 @@ const Hero = () => {
               THE STRATEGIC <br />GIFTING QUEEN
             </h2>
             <p className="hero-subtitle text-royal-gold text-base sm:text-lg md:text-xl lg:text-2xl mt-4 max-w-[400px]">
-              helping you find and keep customers for life!
+              HELPING you find and keep customers for life!
             </p>
           </div>
         </div>

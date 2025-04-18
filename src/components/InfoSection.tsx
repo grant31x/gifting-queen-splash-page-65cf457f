@@ -1,7 +1,5 @@
-
 import React from 'react';
 import { Mail } from 'lucide-react';
-import { Button } from './ui/button';
 import { Instagram, Linkedin, Youtube } from 'lucide-react';
 import { useIsMobile } from '../hooks/use-mobile';
 
@@ -26,7 +24,7 @@ const InfoBox = ({ icon, title, subtitle, linkText, href }: InfoBoxProps) => {
         {title}
       </div>
       {subtitle && <div className="text-royal-cream/80 mb-4 text-sm sm:text-base">{subtitle}</div>}
-      <div className="text-royal-cream/60 mt-2 text-xs sm:text-sm tracking-wide">
+      <div className="text-royal-cream/60 mt-auto text-xs sm:text-sm tracking-wide">
         {linkText}
       </div>
     </a>
@@ -51,9 +49,9 @@ const InfoSection = () => {
             <Mail size={isMobile ? 24 : 36} color="white" />
           </div>}
           title={<>
-            <h3 className="text-[#30A9DE] text-xl sm:text-2xl font-bold">MAILBOX POWER</h3>
-            <p className="text-[#30A9DE] text-lg sm:text-xl font-bold">-VIDEO DEMO-</p>
-            <p className="text-[#30A9DE] text-lg sm:text-xl font-bold">BOOK A CALL</p>
+            <h3 className="text-royal-cream text-xl sm:text-2xl font-bold">MAILBOX POWER</h3>
+            <p className="text-royal-cream text-lg sm:text-xl font-bold">-VIDEO DEMO-</p>
+            <p className="text-royal-cream text-lg sm:text-xl font-bold">BOOK A CALL</p>
           </>}
           linkText="CLICK HERE"
           href="https://app.mailboxpower.com/demo/BROWNIES"
@@ -74,8 +72,8 @@ const InfoSection = () => {
         <InfoBox 
           icon={<img src="/lovable-uploads/eeb5b286-832c-4437-9952-8b24132aa7cb.png" alt="Gift" className="w-12 h-12 sm:w-16 sm:h-16 rounded-full object-cover" />}
           title={<h3 className="text-royal-cream text-xl sm:text-2xl font-bold">FREE GIFT</h3>}
-          subtitle="DOWNLOAD TODAY"
-          linkText=""
+          subtitle="COMING SOON"
+          linkText="CLICK HERE"
           href="#free-gift"
         />
         
@@ -85,9 +83,9 @@ const InfoSection = () => {
             <Mail size={isMobile ? 24 : 36} color="white" />
           </div>}
           title={<>
-            <h3 className="text-[#30A9DE] text-xl sm:text-2xl font-bold">I WISH MORE</h3>
-            <p className="text-[#30A9DE] text-lg sm:text-xl font-bold">PEOPLE KNEW</p>
-            <p className="text-[#30A9DE] text-lg sm:text-xl font-bold">THAT...</p>
+            <h3 className="text-royal-cream text-xl sm:text-2xl font-bold">7 REASONS</h3>
+            <p className="text-royal-cream text-lg sm:text-xl font-bold">I CHOOSE</p>
+            <p className="text-royal-cream text-lg sm:text-xl font-bold">MAILBOX POWER</p>
           </>}
           linkText="CLICK HERE"
           href="https://www.instagram.com/reel/DG1x1IPJ0jb/?igsh=MWp5aXc0MWoyaXA5bQ=="

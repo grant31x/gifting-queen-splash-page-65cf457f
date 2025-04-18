@@ -28,7 +28,7 @@ const Hero = () => {
             <h1 className="hero-title text-royal-gold text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-3">
               I'M TAMI
             </h1>
-            <h2 className="hero-title text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
+            <h2 className="hero-title text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
               THE STRATEGIC <br />GIFTING QUEEN
             </h2>
             <p className="hero-subtitle text-royal-gold text-base sm:text-lg md:text-xl lg:text-2xl mt-4 max-w-[400px]">

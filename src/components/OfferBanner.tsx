@@ -11,9 +11,9 @@ const OfferBanner = () => {
         href="https://go.mailboxpower.com/specialoffer?invite=BROWNIES" 
         target="_blank" 
         rel="noopener noreferrer" 
-        className="block"
+        className="block transform transition-all duration-300 hover:scale-105 hover:brightness-110"
       >
-        <div className="offer-banner cursor-pointer hover:scale-105 transition-transform duration-300">
+        <div className="offer-banner cursor-pointer">
           CLAIM EXCLUSIVE OFFER TODAY!
         </div>
       </a>

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Instagram, Linkedin, Youtube } from 'lucide-react';
 import { useIsMobile } from '../hooks/use-mobile';
@@ -7,20 +8,30 @@ interface InfoBoxProps {
   subtitle?: string;
   linkText: string;
   href: string;
+  imageSrc?: string;
 }
 
-const InfoBox = ({ title, subtitle, linkText, href }: InfoBoxProps) => {
+const InfoBox = ({ title, subtitle, linkText, href, imageSrc }: InfoBoxProps) => {
   return (
     <a 
       href={href} 
-      className="block bg-royal-black border border-royal-gold/30 p-4 sm:p-6 text-center transition-all duration-300 hover:scale-105 hover:border-royal-gold hover:shadow-[0_0_15px_rgba(212,175,55,0.3)] relative min-h-[250px]"
+      className="block bg-royal-black border border-royal-gold/30 p-4 sm:p-6 text-center transition-all duration-300 hover:scale-105 hover:border-royal-gold hover:shadow-[0_0_15px_rgba(212,175,55,0.3)] relative min-h-[300px] flex flex-col"
     >
-      <div className="flex flex-col items-center justify-between h-full">
-        <div>
-          {title}
-          {subtitle && <div className="text-royal-cream/80 mb-4 text-sm sm:text-base font-bold">{subtitle}</div>}
+      {imageSrc && (
+        <div className="mb-4 w-full h-32 overflow-hidden rounded-lg">
+          <img 
+            src={imageSrc} 
+            alt="" 
+            className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+          />
         </div>
-        <div className="text-royal-cream/60 mt-4 text-xs sm:text-sm tracking-wide">
+      )}
+      <div className="flex flex-col items-center justify-between flex-grow">
+        <div className="text-center">
+          {title}
+          {subtitle && <div className="text-royal-cream text-lg sm:text-xl font-bold mb-4">{subtitle}</div>}
+        </div>
+        <div className="text-royal-cream/60 mt-auto text-xs sm:text-sm tracking-wide">
           {linkText}
         </div>
       </div>
@@ -49,6 +60,7 @@ const InfoSection = () => {
           </>}
           linkText="CLICK HERE"
           href="https://app.mailboxpower.com/demo/BROWNIES"
+          imageSrc="/lovable-uploads/eeb5b286-832c-4437-9952-8b24132aa7cb.png"
         />
         
         {/* About Me Box */}
@@ -59,6 +71,7 @@ const InfoSection = () => {
           </>}
           linkText="CLICK HERE"
           href="#about-me"
+          imageSrc="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9"
         />
         
         {/* Free Gift Box */}
@@ -66,7 +79,8 @@ const InfoSection = () => {
           title={<h3 className="text-royal-cream text-xl sm:text-2xl font-bold">FREE GIFT</h3>}
           subtitle="COMING SOON"
           linkText="CLICK HERE"
-          href="#free-gift"
+          href="https://tamigrant.myflodesk.com/linkinbio"
+          imageSrc="https://images.unsplash.com/photo-1493962853295-0fd70327578a"
         />
         
         {/* 7 Reasons Box */}
@@ -77,7 +91,8 @@ const InfoSection = () => {
             <p className="text-royal-cream text-lg sm:text-xl font-bold">MAILBOX POWER</p>
           </>}
           linkText="CLICK HERE"
-          href="https://www.instagram.com/reel/DG1x1IPJ0jb/?igsh=MWp5aXc0MWoyaXA5bQ=="
+          href="https://youtu.be/WwCwFFbio1Q"
+          imageSrc="https://images.unsplash.com/photo-1721322800607-8c38375eef04"
         />
       </div>
 

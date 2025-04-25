@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Gift, UserCircle, Package, Award } from 'lucide-react';
 import { useIsMobile } from '../hooks/use-mobile';
@@ -16,10 +17,10 @@ const InfoBox = ({ title, subtitle, linkText, href, icon }: InfoBoxProps) => {
       href={href} 
       target="_blank"
       rel="noopener noreferrer"
-      className="block bg-royal-black border border-royal-gold/30 p-4 sm:p-6 text-center transition-all duration-300 hover:scale-105 hover:border-royal-gold hover:shadow-[0_0_15px_rgba(212,175,55,0.3)] relative min-h-[300px] flex flex-col"
+      className="block bg-royal-black border border-royal-gold/30 p-4 sm:p-6 text-center transition-all duration-300 hover:scale-105 hover:border-royal-gold hover:shadow-[0_0_15px_rgba(212,175,55,0.3)] relative min-h-[250px] flex flex-col"
     >
       <div className="flex justify-center mb-6">
-        <div className="text-royal-gold w-16 h-16 sm:w-20 sm:h-20">
+        <div className="text-royal-gold w-12 h-12 sm:w-16 sm:h-16">
           {icon}
         </div>
       </div>
@@ -40,52 +41,45 @@ const InfoSection = () => {
   const isMobile = useIsMobile();
   
   return (
-    <div className="bg-royal-black py-10 sm:py-16 px-4">
-      {/* Title */}
-      <h2 className="text-white text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-center mb-10 sm:mb-16">
+    <div className="bg-royal-black py-8 sm:py-12 px-4">
+      <h2 className="text-white text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-center mb-8 sm:mb-12">
         MORE INFORMATION BELOW
       </h2>
       
-      {/* Info Boxes Grid */}
-      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8 max-w-6xl mb-10 sm:mb-16">
-        {/* Mailbox Power Box */}
+      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 max-w-6xl mb-8 sm:mb-12">
         <InfoBox 
           title={<>
-            <h3 className="text-royal-cream text-xl sm:text-2xl font-bold">MAILBOX POWER</h3>
-            <p className="text-royal-cream text-lg sm:text-xl font-bold">-VIDEO DEMO-</p>
-            <p className="text-royal-cream text-lg sm:text-xl font-bold">BOOK A CALL</p>
+            <h3 className="text-royal-cream text-lg sm:text-xl font-bold">MAILBOX POWER</h3>
+            <p className="text-royal-cream text-base sm:text-lg font-bold">-VIDEO DEMO-</p>
+            <p className="text-royal-cream text-base sm:text-lg font-bold">BOOK A CALL</p>
           </>}
           linkText="CLICK HERE"
           href="https://app.mailboxpower.com/demo/BROWNIES"
           icon={<Package className="w-full h-full" />}
         />
         
-        {/* About Me Box */}
         <InfoBox 
           title={<>
-            <h3 className="text-royal-cream text-xl sm:text-2xl font-bold">ABOUT ME</h3>
-            <p className="text-royal-cream text-lg sm:text-xl font-bold">HELPING</p>
+            <h3 className="text-royal-cream text-lg sm:text-xl font-bold">ABOUT ME</h3>
+            <p className="text-royal-cream text-base sm:text-lg font-bold">COMING SOON</p>
           </>}
           linkText="CLICK HERE"
           href="#about-me"
           icon={<UserCircle className="w-full h-full" />}
         />
         
-        {/* Free Gift Box */}
         <InfoBox 
-          title={<h3 className="text-royal-cream text-xl sm:text-2xl font-bold">FREE GIFT</h3>}
-          subtitle="COMING SOON"
+          title={<h3 className="text-royal-cream text-lg sm:text-xl font-bold">FREE GIFT</h3>}
           linkText="CLICK HERE"
           href="https://tamigrant.myflodesk.com/linkinbio"
           icon={<Gift className="w-full h-full" />}
         />
         
-        {/* 7 Reasons Box */}
         <InfoBox 
           title={<>
-            <h3 className="text-royal-cream text-xl sm:text-2xl font-bold">7 REASONS</h3>
-            <p className="text-royal-cream text-lg sm:text-xl font-bold">I CHOOSE</p>
-            <p className="text-royal-cream text-lg sm:text-xl font-bold">MAILBOX POWER</p>
+            <h3 className="text-royal-cream text-lg sm:text-xl font-bold">7 REASONS</h3>
+            <p className="text-royal-cream text-base sm:text-lg font-bold">I CHOOSE</p>
+            <p className="text-royal-cream text-base sm:text-lg font-bold">MAILBOX POWER</p>
           </>}
           linkText="CLICK HERE"
           href="https://youtu.be/WwCwFFbio1Q"
@@ -93,12 +87,11 @@ const InfoSection = () => {
         />
       </div>
 
-      {/* Social Connection Section */}
       <div className="text-center">
-        <h2 className="text-white text-2xl sm:text-3xl md:text-4xl font-serif font-bold mb-4 sm:mb-6">
+        <h2 className="text-white text-xl sm:text-2xl md:text-3xl font-serif font-bold mb-4">
           ARE WE CONNECTED?
         </h2>
-        <div className="flex justify-center gap-4 sm:gap-6">
+        <div className="flex justify-center gap-4">
           <a 
             href="https://www.instagram.com/the.strategicgifting.queen?igsh=bzJndW8wdnpwd2M%3D&utm_source=qr" 
             target="_blank" 
@@ -108,7 +101,7 @@ const InfoSection = () => {
             <img 
               src="/lovable-uploads/2464fbf7-692a-4470-8395-96ad1ae39c33.png" 
               alt="Instagram" 
-              className="w-12 h-12 sm:w-16 sm:h-16"
+              className="w-10 h-10 sm:w-12 sm:h-12"
             />
           </a>
           <a 
@@ -120,7 +113,7 @@ const InfoSection = () => {
             <img 
               src="/lovable-uploads/6465750e-28f5-4c04-a63d-3da3bb3f241e.png" 
               alt="LinkedIn" 
-              className="w-12 h-12 sm:w-16 sm:h-16"
+              className="w-10 h-10 sm:w-12 sm:h-12"
             />
           </a>
           <a 
@@ -132,7 +125,7 @@ const InfoSection = () => {
             <img 
               src="/lovable-uploads/c452717f-c426-468a-90cb-8987816f4ee6.png" 
               alt="YouTube" 
-              className="w-12 h-12 sm:w-16 sm:h-16"
+              className="w-10 h-10 sm:w-12 sm:h-12"
             />
           </a>
         </div>

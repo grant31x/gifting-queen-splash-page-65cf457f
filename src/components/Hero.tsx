@@ -1,6 +1,5 @@
 
 import React from 'react';
-import OfferBanner from './OfferBanner';
 import { useIsMobile } from '../hooks/use-mobile';
 
 const Hero = () => {
@@ -16,9 +15,6 @@ const Hero = () => {
           className="w-full h-full object-cover"
         />
       </div>
-      
-      {/* Offer Banner */}
-      <OfferBanner />
       
       {/* Hero Text Overlay */}
       <div className="absolute inset-0 z-10 flex items-center">

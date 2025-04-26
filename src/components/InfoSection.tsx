@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Gift, UserCircle, Package, Award } from 'lucide-react';
+import { Gift, UserCircle, Mail, Award } from 'lucide-react';
 import { useIsMobile } from '../hooks/use-mobile';
 
 interface InfoBoxProps {
@@ -55,7 +55,7 @@ const InfoSection = () => {
           </>}
           linkText="CLICK HERE"
           href="https://app.mailboxpower.com/demo/BROWNIES"
-          icon={<Package className="w-full h-full" />}
+          icon={<Mail className="w-full h-full" />}
         />
         
         <InfoBox 

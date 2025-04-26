@@ -27,7 +27,7 @@ const Hero = () => {
             <h2 className="hero-title text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl">
               THE STRATEGIC <br />GIFTING QUEEN
             </h2>
-            <p className="hero-subtitle text-royal-gold text-base sm:text-lg md:text-xl lg:text-2xl mt-4 max-w-[400px]">
+            <p className="hero-subtitle text-royal-gold text-base sm:text-lg md:text-xl lg:text-2xl mt-4 max-w-[50%] sm:max-w-[400px]">
               Helping you find and keep customers for life!
             </p>
           </div>

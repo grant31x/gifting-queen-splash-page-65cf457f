@@ -78,7 +78,7 @@ const InfoSection = () => {
         <InfoBox 
           title={<>
             <h3 className="text-royal-cream text-lg sm:text-xl font-bold">7 REASONS</h3>
-            <p className="text-royal-cream text-base sm:text-lg font-bold">I CHOOSE</p>
+            <p className="text-royal-cream text-base sm:text-lg font-bold">TO CHOOSE</p>
             <p className="text-royal-cream text-base sm:text-lg font-bold">MAILBOX POWER</p>
           </>}
           linkText="CLICK HERE"

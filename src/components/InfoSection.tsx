@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Gift, UserCircle, Mail, lightbulb } from 'lucide-react';
+import { Gift, UserCircle, Mail, Trophy } from 'lucide-react';
 import { useIsMobile } from '../hooks/use-mobile';
 
 interface InfoBoxProps {
@@ -83,7 +83,7 @@ const InfoSection = () => {
           </>}
           linkText="CLICK HERE"
           href="https://youtu.be/WwCwFFbio1Q"
-          icon={<lightbulb className="w-full h-full" />}
+          icon={<Trophy className="w-full h-full" />}
         />
       </div>
 
